@@ -13,7 +13,28 @@
 		ED1775F328046F2C00B5CED1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED1775F128046F2C00B5CED1 /* Main.storyboard */; };
 		ED1775F528046F2E00B5CED1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED1775F428046F2E00B5CED1 /* Assets.xcassets */; };
 		ED1775F828046F2E00B5CED1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED1775F628046F2E00B5CED1 /* LaunchScreen.storyboard */; };
+		ED17760028046FB900B5CED1 /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1775FF28046FB900B5CED1 /* UIConstants.swift */; };
+		ED1776032804727D00B5CED1 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = ED1776022804727D00B5CED1 /* SnapKit */; };
+		EDC6CE3328047CD300BABB1C /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC6CE3228047CD300BABB1C /* TableViewCell.swift */; };
+		EDC6CE362804AE1800BABB1C /* RevealServer.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC6CE352804AE1800BABB1C /* RevealServer.xcframework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		EDC6CE372804AE1800BABB1C /* RevealServer.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EDC6CE352804AE1800BABB1C /* RevealServer.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EDC6CE3D2805C00C00BABB1C /* CellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC6CE3C2805C00C00BABB1C /* CellModel.swift */; };
+		EDC6CE3F2805C90E00BABB1C /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC6CE3E2805C90E00BABB1C /* ViewController2.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EDC6CE382804AE1800BABB1C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EDC6CE372804AE1800BABB1C /* RevealServer.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		ED1775E828046F2C00B5CED1 /* MasterInternetDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasterInternetDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +45,11 @@
 		ED1775F428046F2E00B5CED1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED1775F728046F2E00B5CED1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED1775F928046F2E00B5CED1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED1775FF28046FB900B5CED1 /* UIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
+		EDC6CE3228047CD300BABB1C /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		EDC6CE352804AE1800BABB1C /* RevealServer.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RevealServer.xcframework; sourceTree = "<group>"; };
+		EDC6CE3C2805C00C00BABB1C /* CellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellModel.swift; sourceTree = "<group>"; };
+		EDC6CE3E2805C90E00BABB1C /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED1776032804727D00B5CED1 /* SnapKit in Frameworks */,
+				EDC6CE362804AE1800BABB1C /* RevealServer.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +70,7 @@
 			children = (
 				ED1775EA28046F2C00B5CED1 /* MasterInternetDemo */,
 				ED1775E928046F2C00B5CED1 /* Products */,
+				EDC6CE342804AE1800BABB1C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +88,24 @@
 				ED1775EB28046F2C00B5CED1 /* AppDelegate.swift */,
 				ED1775ED28046F2C00B5CED1 /* SceneDelegate.swift */,
 				ED1775EF28046F2C00B5CED1 /* ViewController.swift */,
+				EDC6CE3C2805C00C00BABB1C /* CellModel.swift */,
+				EDC6CE3E2805C90E00BABB1C /* ViewController2.swift */,
+				EDC6CE3228047CD300BABB1C /* TableViewCell.swift */,
+				ED1775FF28046FB900B5CED1 /* UIConstants.swift */,
 				ED1775F128046F2C00B5CED1 /* Main.storyboard */,
 				ED1775F428046F2E00B5CED1 /* Assets.xcassets */,
 				ED1775F628046F2E00B5CED1 /* LaunchScreen.storyboard */,
 				ED1775F928046F2E00B5CED1 /* Info.plist */,
 			);
 			path = MasterInternetDemo;
+			sourceTree = "<group>";
+		};
+		EDC6CE342804AE1800BABB1C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDC6CE352804AE1800BABB1C /* RevealServer.xcframework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,12 +118,17 @@
 				ED1775E428046F2C00B5CED1 /* Sources */,
 				ED1775E528046F2C00B5CED1 /* Frameworks */,
 				ED1775E628046F2C00B5CED1 /* Resources */,
+				EDC6CE382804AE1800BABB1C /* Embed Frameworks */,
+				EDC6CE392804AE7100BABB1C /* RevealSDK */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = MasterInternetDemo;
+			packageProductDependencies = (
+				ED1776022804727D00B5CED1 /* SnapKit */,
+			);
 			productName = MasterInternetDemo;
 			productReference = ED1775E828046F2C00B5CED1 /* MasterInternetDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +157,9 @@
 				Base,
 			);
 			mainGroup = ED1775DF28046F2C00B5CED1;
+			packageReferences = (
+				ED1776012804727D00B5CED1 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = ED1775E928046F2C00B5CED1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -133,14 +182,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		EDC6CE392804AE7100BABB1C /* RevealSDK */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = RevealSDK;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export REVEAL_SERVER_FILENAME=\"RevealServer.xcframework\"\n\n# Update this path to point to the location of RevealServer.xcframework in your project.\nexport REVEAL_SERVER_PATH=\"${SRCROOT}/${REVEAL_SERVER_FILENAME}\"\n\n# If RevealServer.xcframework exists at the specified path, run the integration script.\nif [ -d \"${REVEAL_SERVER_PATH}\" ]; then\n  \"${REVEAL_SERVER_PATH}/Scripts/integrate_revealserver.sh\"\nelse\n  echo \"Reveal Server not loaded into ${TARGET_NAME}: ${REVEAL_SERVER_FILENAME} could not be found.\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ED1775E428046F2C00B5CED1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDC6CE3F2805C90E00BABB1C /* ViewController2.swift in Sources */,
+				EDC6CE3328047CD300BABB1C /* TableViewCell.swift in Sources */,
 				ED1775F028046F2C00B5CED1 /* ViewController.swift in Sources */,
 				ED1775EC28046F2C00B5CED1 /* AppDelegate.swift in Sources */,
+				EDC6CE3D2805C00C00BABB1C /* CellModel.swift in Sources */,
 				ED1775EE28046F2C00B5CED1 /* SceneDelegate.swift in Sources */,
+				ED17760028046FB900B5CED1 /* UIConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +432,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ED1776012804727D00B5CED1 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ED1776022804727D00B5CED1 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED1776012804727D00B5CED1 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ED1775E028046F2C00B5CED1 /* Project object */;
 }
