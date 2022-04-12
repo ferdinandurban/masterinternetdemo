@@ -12,8 +12,6 @@ let CELL_IDENTIFIER: String = "tableViewCell"
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
   
-  
-  
   @IBOutlet weak var scrollView: UIScrollView!
   @IBOutlet weak var contentView: UIView!
   @IBOutlet weak var tableView1: UITableView!
@@ -45,8 +43,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     CellModel(image: "watch", description: "Apple Watch"),
     CellModel(image: "cameras", description: "Přidejte si HomeKitovou kameru")
   ]
-  
-  
+    
   override func viewDidLoad() {
     super.viewDidLoad()
     title = "How to use this app"
@@ -90,18 +87,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     contentView.snp.remakeConstraints {
       $0.top.left.right.equalToSuperview()
       $0.width.equalToSuperview()
-      $0.bottom.equalTo(tableView3.snp.bottom)
-    }
-    
+      $0.bottom.equalTo(tableView3.snp.bottom).offset(Offsets.bigMargin20)
+    }    
   }
-  
-//
-//  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//    if let destination = segue.destination as? MotionDetectionViewController {
-//
-//    }
-//  }
-  
+    
   // MARK: -- TABLE VIEW --
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
     return Sizes.tableRowHeight
@@ -115,8 +104,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: CELL_IDENTIFIER,
                                              for: indexPath) as! TableViewCell
-    
-    
+        
     if tableView === tableView1 {
       cell.data = dummyData1[indexPath.row]
     }
@@ -143,52 +131,5 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
       default:
         return 0
     }
-    
   }
-  
-}
-
-class FirstTableViewDataSource: NSObject, UITableViewDataSource {
-  
-  
-  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 8
-  }
-  
-  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: CELL_IDENTIFIER) as! TableViewCell
-//    cell.account.text = accounts[indexPath.row].email
-    return cell
-  }
-  
-}
-
-class SecondTableViewDataSource: NSObject, UITableViewDataSource {
-  
-  
-  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 8
-  }
-  
-  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: CELL_IDENTIFIER) as! TableViewCell
-    //    cell.account.text = accounts[indexPath.row].email
-    return cell
-  }
-  
-}
-
-class ThirdTableViewDataSource: NSObject, UITableViewDataSource {
-  
-  
-  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 8
-  }
-  
-  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: CELL_IDENTIFIER) as! TableViewCell
-    //    cell.account.text = accounts[indexPath.row].email
-    return cell
-  }
-  
 }
