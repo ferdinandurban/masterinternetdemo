@@ -88,7 +88,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
       $0.top.left.right.equalToSuperview()
       $0.width.equalToSuperview()
       $0.bottom.equalTo(tableView3.snp.bottom).offset(Offsets.bigMargin20)
-    }    
+    }
   }
     
   // MARK: -- TABLE VIEW --
@@ -116,6 +116,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     if tableView === tableView3 {
       cell.data = dummyData3[indexPath.row]
     }
+    
+    cell.accessoryType = .disclosureIndicator
     
     return cell
   }
